@@ -1,0 +1,162 @@
+@charset "utf-8";  
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Body */ 
+#id_block{
+    width: 1300px;
+    margin:0 auto;
+    padding: 0;
+    font-size:100%;
+}
+/* « Pour tous les types d'écrans,
+    si la largeur de la fenêtre ne dépasse pas 1 024 px,
+    alors exécuter les règles CSS suivantes »
+ ******************************************************/
+@media all and (max-width: 1024px)
+{
+    #id_block
+    {
+        width: auto;
+        font-size:70%;
+    }
+}
+
+/* Header */
+header {
+    display: block;
+    background-color: rgb(255, 153, 153);
+    border-radius: 50px;
+    box-shadow: 5px 5px rgb(161, 132, 150);
+    border: 10px;
+    padding: 3px 1px 5px 1px;
+    margin-bottom: 1em;
+}
+header p {
+    float: right;
+}
+header img{
+    padding-left: 2.5em;
+    padding-right: 1.7em;
+    border-color: rgb(161, 132, 150);
+
+}
+@media all and (max-width: 1024px)
+{
+    header
+    {
+       display:none;
+    }
+}
+
+
+/* nav */
+nav{
+    font-family: "Bebas Neue",serif;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 0.2em;   
+    line-height: 1.6em;
+}
+nav a {
+    text-decoration: none; 
+    color: black; 
+    width: 15%;
+}
+nav a:hover{
+    color: rgb(102, 0, 102);
+}
+nav ul li:hover{
+    text-indent: 20%;
+} 
+nav {
+    background-color: rgb(204, 229, 255); 
+    float: left;
+    border-radius: 50px/25px;
+    box-shadow: 10px -10px rgb(160, 194, 207);
+    border-width: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 2em;
+    margin-right: 0.5em;
+}
+nav ul{list-style: none;
+}
+@media all and (max-width: 1024px)
+{
+    nav{
+        width:93%;
+        margin:1%;
+    }
+    nav ul {
+        margin: auto;
+        text-align: center;
+    }
+    nav ul li{
+        display: inline-block;
+        font-size:80%; 
+        color: indigo;
+        border: solid 2px indianred;
+        border-radius: 10%;
+        text-shadow: 1px 2px 3px red;
+        margin:1%;
+        padding:1%
+    }
+    nav ul a{
+        text-decoration: none;
+    }
+  
+}
+/*section*/
+section {
+    float: left;
+     width:55%; 
+     background-color:rgb(206, 229, 255);
+     margin: 1%;
+     padding: 0.7em;
+}
+@media all and (max-width: 1024px)
+{
+    section{
+        width:auto;
+    }
+  
+}
+
+/*aside*/
+aside {
+    float:right;
+    color: rgb(102, 0, 102);
+    border:solid;
+    width: 20%;
+    border-radius: 25px;
+    box-shadow: 10px 10px rgb(164, 140, 196);
+    border-width: 0.5em;
+    margin: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.3em;
+}
+
+@media all and (max-width: 1024px)
+{
+    aside p:last-child
+    {
+        text-align: center;
+    }
+    aside
+    {
+        clear:both;
+        width: auto;
+        margin: 1%;
+    }
+}
+/*footer*/
+footer {
+    text-decoration: none;
+    color: rgb(102, 0, 102);
+    clear:both;
+     background-color: rgb(255, 153, 153);
+     display: block;
+    padding: 0.2em 0.3em 0.6em 0.3em;
+
+}
+footer div {
+    float: right;
+}
